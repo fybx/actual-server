@@ -1,0 +1,11 @@
+[Unit]
+Description=actual-server
+After=network.target
+
+[Service]
+ExecStart=/home/lain/deployments/actual-server/launch.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
+
